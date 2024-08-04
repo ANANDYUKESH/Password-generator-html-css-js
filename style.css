@@ -1,0 +1,139 @@
+body{
+    background-color: #002339;
+    color: #ffff;
+}
+.container{
+    margin-left: 200px;
+    margin-top: 100px;;
+}
+h1{
+  
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+span{
+    margin-top: 40px;
+    color:#019f55;
+    border-bottom: 2px solid #019f55;
+}
+
+.display{
+    width: 60%;
+    margin-top: 50px;
+    height: 60px;
+    margin-bottom: 30px;
+    background-color: #ffff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+#input{
+    outline: 0px;
+    border: 0px;
+    font-size: 24px;
+    color: green;
+}
+#image{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.click{
+    width: 300px;
+    margin-top: 50px;
+    height: 60px;
+    margin-bottom: 30px;
+    background-color:blueviolet;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius:10px ;
+}
+#thunder{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius:3px ;
+}
+#pass{
+    outline: 0px;
+    border: 0px;
+    font-size: 22px;
+    background-color:blueviolet;
+    margin-right: 30px;
+   color: #ffff;
+}
+#pass:hover{
+color:#83E22B;
+}
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .container {
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+
+    .display, .click {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .display, .click {
+        width: 100%;
+        height: 50px;
+    }
+
+    #input {
+        font-size: 20px;
+    }
+
+    #image, #thunder {
+        width: 30px;
+        height: 30px;
+    }
+
+    #pass {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .display, .click {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #input, #pass {
+        font-size: 16px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #image, #thunder {
+        width: 20px;
+        height: 20px;
+    }
+}
